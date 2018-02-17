@@ -31,10 +31,10 @@ The site requires React, so first make sure you've built the project (via `grunt
 Use Jekyll to serve the website locally (by default, at `http://localhost:4000`):
 
 ```sh
-$ cd react/docs
+$ cd nodal/new_docs
 $ bundle exec rake
 $ bundle exec jekyll serve -w
-$ open http://localhost:4000/react/
+$ open http://localhost:4000/nodal/
 ```
 
 We use [SASS](http://sass-lang.com/) (with [Bourbon](http://bourbon.io/)) for our CSS, and we use JSX to transform some of our JS.
