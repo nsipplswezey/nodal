@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <meta property="og:title" content="GraphQL | Nodal">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://facebook.github.io/nodal/docs/graphql.html">
+  <meta property="og:url" content="https://nsipplsweze.github.io/nodal/docs/graphql.html">
   <meta property="og:image" content="www.nodaljs.com/static/images/favicon_blue.png">
   <meta property="og:description" content="Node.js web servers optimized for building API services quickly and efficiently.">
   <meta property="fb:app_id" content="623268441017527">
@@ -82,6 +82,7 @@
 
         } catch (e) {
         // handle exception e, provide fallback, ..
+        ClientStorage[k] = v;
       }
 
     }
@@ -92,6 +93,7 @@
         return sessionStorage.getItem(k);
       } catch (e) {
         // handle exception e, provide fallback, ..
+        return ClientStorage[k];
       }
 
     }
@@ -153,11 +155,6 @@
             
           </li>
         
-          <li>
-            <a href="/nodal/docs/thinking-in-nodal.html">Thinking in Nodal</a>
-            
-          </li>
-        
       </ul>
     </div>
   
@@ -215,31 +212,6 @@
             
           </li>
         
-          <li>
-            <a href="/nodal/docs/middleware.html">Middleware</a>
-            
-          </li>
-        
-          <li>
-            <a href="/nodal/docs/renderware.html">Renderware</a>
-            
-          </li>
-        
-          <li>
-            <a href="/nodal/docs/scheduled-tasks.html">Scheduled Tasks</a>
-            
-          </li>
-        
-          <li>
-            <a href="/nodal/docs/pg-json-support.html">PG json Support</a>
-            
-          </li>
-        
-          <li>
-            <a href="/nodal/docs/node-inspector-debugging.html">Debugging with node-inspector</a>
-            
-          </li>
-        
       </ul>
     </div>
   
@@ -258,11 +230,6 @@
     <div class="nav-docs-section">
       <h3>Reference</h3>
       <ul>
-        
-          <li>
-            <a href="/nodal/docs/top-level-api.html">Top-Level API</a>
-            
-          </li>
         
           <li>
             <a href="/nodal/docs/generator-api.html">Generator API</a>
@@ -294,7 +261,7 @@
 
 
   <div class="inner-content">
-    <a class="edit-page-link" href="https://github.com/keithwhor/nodal/tree/master/docs/docs/02-graphql.md" target="_blank">Edit on GitHub</a>
+    <a class="edit-page-link" href="https://github.com/nsipplswezey/nodal/tree/master/new_docs/docs/02-graphql.md" target="_blank">Edit on GitHub</a>
     <h1>
       GraphQL
     </h1>
@@ -348,7 +315,7 @@
         <a href="/nodal/acknowledgements.html">Acknowledgements</a>
       </div>
       <div class="right">
-        &copy; 2016 Keith Horwood<br>
+        &copy; 2018 Keith Horwood<br>
         Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
       </div>
     </footer>

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
   <meta property="og:title" content="A node.js Framework For Building API Services | Nodal">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://facebook.github.io/nodal/index.html">
+  <meta property="og:url" content="https://nsipplsweze.github.io/nodal/index.html">
   <meta property="og:image" content="www.nodaljs.com/static/images/favicon_blue.png">
   <meta property="og:description" content="Node.js web servers optimized for building API services quickly and efficiently.">
   <meta property="fb:app_id" content="623268441017527">
@@ -82,6 +82,7 @@
 
         } catch (e) {
         // handle exception e, provide fallback, ..
+        ClientStorage[k] = v;
       }
 
     }
@@ -92,6 +93,7 @@
         return sessionStorage.getItem(k);
       } catch (e) {
         // handle exception e, provide fallback, ..
+        return ClientStorage[k];
       }
 
     }
@@ -143,7 +145,7 @@
 
         <div class="buttons-unit">
           <a href="/nodal/docs/getting-started.html" class="button">Get Started</a>
-          <a href="/nodal/downloads.html" class="button">Download Nodal v0.10.0</a>
+          <a href="/nodal/downloads.html" class="button">Download Nodal v0.9.1</a>
         </div>
       </div>
     </div>
@@ -211,16 +213,16 @@
 
 <p></div>
   <script src="/nodal/js/marked.min.js"></script>
-  <script src="/nodal/js/examples/hello.js"></script>
-  <script src="/nodal/js/examples/timer.js"></script>
-  <script src="/nodal/js/examples/todo.js"></script>
+  <script src="/nodal/js/examples/nodal-hello.js"></script>
+  <script src="/nodal/js/examples/nodal-timer.js"></script>
+  <script src="/nodal/js/examples/nodal-todo.js"></script>
   <script src="/nodal/js/examples/markdown.js"></script>
 </section>
 <hr class="home-divider" />
 <section class="home-bottom-section">
   <div class="buttons-unit">
     <a href="docs/getting-started.html" class="button">Get Started</a>
-    <a href="downloads.html" class="button">Download Nodal v0.10.0</a>
+    <a href="downloads.html" class="button">Download Nodal v0.9.1</a>
   </div>
 </section></p>
 
@@ -233,7 +235,7 @@
         <a href="/nodal/acknowledgements.html">Acknowledgements</a>
       </div>
       <div class="right">
-        &copy; 2016 Keith Horwood<br>
+        &copy; 2018 Keith Horwood<br>
         Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
       </div>
     </footer>

@@ -1,3 +1,4 @@
+
 var HelloMessage = React.createClass({
   getInitialState: function() {
     return {username: ''};
@@ -17,11 +18,11 @@ var HelloMessage = React.createClass({
       };
 
       $.post(this.props.source, postData, function(result){
-        this.setState({username: result.data[0].username});
+        ClientStorage.setItem('username',result.data[0].username);
+        this.setState({username: ClientStorage.getItem('username')});
       }.bind(this))
       .fail(function(jqXHR, textStatus, errorThrown){
         console.error(jqXHR.responseText);
-
       });
 
     }.bind(this));
