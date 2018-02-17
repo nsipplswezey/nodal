@@ -278,7 +278,7 @@ Next we run:
 ```
 $ nodal db:prepare
 ```
-This empties out our database and prepares for migration.6
+This empties out our database and prepares for migration.
 
 To run our migration we use:
 
@@ -294,7 +294,7 @@ To rollback a migration, we use:
 $ nodal db:rollback
 ```
 
-This roll's our database back to a prior migration
+This rolls our database back to a prior migration
 
 Migrating will roll our database forward again:
 
