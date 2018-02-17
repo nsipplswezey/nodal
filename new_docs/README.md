@@ -19,7 +19,7 @@ Otherwise, [RVM](https://rvm.io/) and [rbenv](https://github.com/sstephenson/rbe
 Once you have RubyGems and installed Bundler (via `gem install bundler`), use it to install the dependencies:
 
 ```sh
-$ cd react/docs
+$ cd nodal/docs
 $ bundle install # Might need sudo.
 $ npm install
 ```
@@ -42,7 +42,7 @@ If you only want to modify the HTML or Markdown, you do not have to do anything 
 If you want to modify the CSS or JS, use [Rake](http://rake.rubyforge.org/) to compile them:
 
 ```sh
-$ cd react/docs
+$ cd nodal/docs
 $ bundle exec rake watch # Automatically compiles as needed.
 # bundle exec rake         Manually compile CSS and JS.
 # bundle exec rake js      Manually compile JS, only.
